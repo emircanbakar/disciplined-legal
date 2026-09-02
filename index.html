@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Disciplined — Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #FAFAF8;
+    --surface: #FFFFFF;
+    --text: #16161D;
+    --text-secondary: #5C5C68;
+    --accent: #B8842A;
+    --separator: #E2E2DC;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0B0B0F;
+      --surface: #16161D;
+      --text: #F5F5F7;
+      --text-secondary: #A0A0AB;
+      --accent: #E8B04B;
+      --separator: #2A2A35;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 20px 96px;
+  }
+  h1 {
+    font-size: 1.9rem;
+    margin-bottom: 4px;
+  }
+  .updated {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 40px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--separator);
+    padding-bottom: 8px;
+  }
+  p, li { color: var(--text); }
+  ul { padding-left: 1.2em; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--separator);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 24px 0;
+    font-size: 0.95rem;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--separator);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Disciplined for iOS · Effective September 2, 2026</p>
+
+  <div class="callout">
+    <strong>In short:</strong> Disciplined does not collect your data. There is
+    no account, no server that stores anything about you, and no third-party
+    analytics or advertising SDK in the app. Everything you enter — tasks,
+    habits, journal entries, focus sessions — stays on your device, in a
+    storage container shared only between the app and its home-screen widgets.
+  </div>
+
+  <h2>Information we do not collect</h2>
+  <p>Disciplined has no user accounts, no sign-in, and no backend server that
+  stores personal data. We do not know who you are, and we have no way to
+  find out. The app does not use any third-party analytics, advertising, or
+  crash-reporting SDK, so no usage data is ever sent to us or to anyone
+  else.</p>
+
+  <h2>What stays on your device</h2>
+  <p>Everything you create in the app — tasks, habits and their history,
+  focus sessions, journal entries, goals, and which quotes you have favorited
+  or rated — is stored locally on your device using Apple's SwiftData
+  framework, inside a container shared between the app and its widgets. None
+  of it is transmitted anywhere. If you delete the app, that data is deleted
+  with it.</p>
+  <p>You can export a plain-JSON copy of everything you have written at any
+  time from Settings → Your data → Export my data, and you control where
+  that file goes from there. You can also permanently delete everything from
+  Settings → Delete all data.</p>
+
+  <h2>Content updates</h2>
+  <p>The app periodically checks a public, static file for new quotes
+  (hosted at <code>raw.githubusercontent.com</code>). This is a plain file
+  download — no information about you or your device is sent as part of
+  that request, and the request carries no account or advertising
+  identifier.</p>
+
+  <h2>The daily quote seed</h2>
+  <p>To show the same quote in the app, the widget, and a notification on a
+  given day, the app generates one random identifier on first launch and
+  stores it locally. It is not derived from your device's hardware, it is
+  not an advertising identifier, and it never leaves your device — it exists
+  only so the day's quote can be picked the same way twice.</p>
+
+  <h2>Notifications</h2>
+  <p>Reminder notifications (the daily quote, task nudges, a streak warning,
+  a weekly summary) are scheduled locally on your device through iOS's own
+  notification system. Nothing is sent to a push server, because there isn't
+  one. You choose whether to allow notifications at all, and can change that
+  at any time in iOS Settings.</p>
+
+  <h2>Purchases</h2>
+  <p>Premium is sold as a subscription or a one-time purchase through Apple's
+  App Store, using StoreKit. Apple handles payment directly — we never see
+  your card details, and the app only ever learns whether your purchase is
+  active, not who you are or how you paid.</p>
+
+  <h2>Children's privacy</h2>
+  <p>Disciplined is not directed at children under 13, and we do not
+  knowingly collect information from anyone, of any age — the app has
+  nothing to collect in the first place.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the date at the top of this page will change
+  with it. Meaningful changes will also be reflected in the app's own
+  release notes.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy or your data can be sent to
+  <a href="mailto:ecbakar.dev@gmail.com">ecbakar.dev@gmail.com</a>.</p>
+
+  <footer>
+    Disciplined · <a href="https://github.com/emircanbakar/disciplined-legal">github.com/emircanbakar/disciplined-legal</a>
+  </footer>
+</main>
+</body>
+</html>
