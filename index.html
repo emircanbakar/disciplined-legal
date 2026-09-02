@@ -80,19 +80,45 @@
   <p class="updated">Disciplined for iOS · Effective September 2, 2026</p>
 
   <div class="callout">
-    <strong>In short:</strong> Disciplined does not collect your data. There is
-    no account, no server that stores anything about you, and no third-party
-    analytics or advertising SDK in the app. Everything you enter — tasks,
+    <strong>In short:</strong> Disciplined has no account, no sign-in, and no
+    server that stores anything you write. Everything you enter — tasks,
     habits, journal entries, focus sessions — stays on your device, in a
     storage container shared only between the app and its home-screen widgets.
+    The app does send a small number of anonymous usage events (which screens
+    get used, whether a purchase happened) to a privacy-focused analytics
+    service — never anything you typed, and never anything that identifies
+    you. The next section says exactly what that is and is not.
   </div>
 
-  <h2>Information we do not collect</h2>
+  <h2>Analytics</h2>
+  <p>Disciplined sends anonymous product-usage events to
+  <a href="https://telemetrydeck.com">TelemetryDeck</a>, a privacy-focused
+  analytics service that does not use advertising identifiers and does not
+  track you across other apps or websites. What gets sent is a closed,
+  fixed list of events — the app cannot send anything outside it — covering
+  things like: finishing onboarding, opening the app for the first time that
+  day, completing a task or a habit, finishing a focus session, and whether
+  and why the subscription screen was shown, purchased, or dismissed.</p>
+  <p>Every value in those events is a count, a bucketed range, or the name of
+  a fixed option (never a free-form value) — a streak is reported as "8–14
+  days," never as the exact number, and a completed task is reported as
+  "a task was completed," never with its title. Nothing you type anywhere in
+  the app — a task, a journal entry, a habit name, a goal — is ever included.
+  The one exception is rating a quote from the bundled library, which reports
+  which quote (an internal content ID, not anything about you) and whether you
+  rated it up or down, so the library itself can be improved over time.</p>
+  <p>Each install generates one random identifier, used only to recognize the
+  same install across separate events. It has no connection to your name,
+  email, or Apple ID, is not derived from any hardware or advertising
+  identifier, and identifies an install, not a person. It is a different
+  identifier from the one described below for the daily quote — that one is
+  never sent anywhere, this one is sent nowhere else.</p>
+
+  <h2>What we do not collect</h2>
   <p>Disciplined has no user accounts, no sign-in, and no backend server that
-  stores personal data. We do not know who you are, and we have no way to
-  find out. The app does not use any third-party analytics, advertising, or
-  crash-reporting SDK, so no usage data is ever sent to us or to anyone
-  else.</p>
+  stores what you write. We do not know who you are, and we have no way to
+  find out. There is no advertising SDK, no crash reporter, and no
+  cross-app tracking of any kind.</p>
 
   <h2>What stays on your device</h2>
   <p>Everything you create in the app — tasks, habits and their history,
